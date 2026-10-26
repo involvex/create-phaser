@@ -1,0 +1,7 @@
+{
+  "name": "{{projectName}}",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
