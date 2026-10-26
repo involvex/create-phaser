@@ -1,2 +1,2 @@
 // Fixture placeholder source file.
-export const ready = true;
+export const ready = true

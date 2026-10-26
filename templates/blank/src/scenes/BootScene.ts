@@ -1,5 +1,5 @@
-import * as Phaser from "phaser";
-import { COLORS } from "../config";
+import * as Phaser from 'phaser'
+import {COLORS} from '../config'
 
 /**
  * BootScene runs first. Its only jobs:
@@ -10,34 +10,34 @@ import { COLORS } from "../config";
  * any Graphics drawing into a reusable texture with `generateTexture()`.
  */
 export class BootScene extends Phaser.Scene {
-  constructor() {
-    super("Boot");
-  }
+	constructor() {
+		super('Boot')
+	}
 
-  create(): void {
-    this.createTextures();
+	create(): void {
+		this.createTextures()
 
-    // Everything is ready - start the game.
-    this.scene.start("Game");
-  }
+		// Everything is ready - start the game.
+		this.scene.start('Game')
+	}
 
-  /**
-   * Two example textures: a white square and a blue square.
-   *
-   * Draw at (0, 0), bake with generateTexture(key, width, height), then
-   * destroy() the Graphics - the texture stays available forever.
-   */
-  private createTextures(): void {
-    this.makeSquare("square", COLORS.square);
-    this.makeSquare("square-alt", COLORS.squareAlt);
-  }
+	/**
+	 * Two example textures: a white square and a blue square.
+	 *
+	 * Draw at (0, 0), bake with generateTexture(key, width, height), then
+	 * destroy() the Graphics - the texture stays available forever.
+	 */
+	private createTextures(): void {
+		this.makeSquare('square', COLORS.square)
+		this.makeSquare('square-alt', COLORS.squareAlt)
+	}
 
-  private makeSquare(key: string, color: number): void {
-    const size = 24;
-    const g = this.add.graphics();
-    g.fillStyle(color, 1);
-    g.fillRect(0, 0, size, size);
-    g.generateTexture(key, size, size);
-    g.destroy();
-  }
+	private makeSquare(key: string, color: number): void {
+		const size = 24
+		const g = this.add.graphics()
+		g.fillStyle(color, 1)
+		g.fillRect(0, 0, size, size)
+		g.generateTexture(key, size, size)
+		g.destroy()
+	}
 }

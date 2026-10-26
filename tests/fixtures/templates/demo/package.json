@@ -1,7 +1,7 @@
 {
-  "name": "{{projectName}}",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  }
+	"name": "{{projectName}}",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite"
+	}
 }

@@ -41,14 +41,14 @@ my-game/
 
 ## Templates
 
-| Template | Description |
-| --- | --- |
-| `2d-platformer` | Side-scroller with jumping, platforms, coins & a follow camera |
-| `card-game` | Memory-match card game with flip animations & a move counter |
-| `space-shooter` | Shmup with waves of enemies, bullets & particle explosions |
-| `breakout` | Classic brick-breaker with paddle-angle physics & lives |
-| `top-down-shooter` | WASD movement, mouse aim & escalating enemy waves |
-| `blank` | Minimal starter — Boot + Game scene skeleton to build on |
+| Template           | Description                                                    |
+| ------------------ | -------------------------------------------------------------- |
+| `2d-platformer`    | Side-scroller with jumping, platforms, coins & a follow camera |
+| `card-game`        | Memory-match card game with flip animations & a move counter   |
+| `space-shooter`    | Shmup with waves of enemies, bullets & particle explosions     |
+| `breakout`         | Classic brick-breaker with paddle-angle physics & lives        |
+| `top-down-shooter` | WASD movement, mouse aim & escalating enemy waves              |
+| `blank`            | Minimal starter — Boot + Game scene skeleton to build on       |
 
 List templates any time with:
 
@@ -58,16 +58,16 @@ bunx @involvex/create-phaser --list
 
 ## CLI options
 
-| Option | Description |
-| --- | --- |
-| `-t, --template <id>` | Use a specific template (see `--list`) |
-| `--pm <pm>` | Package manager: `bun` \| `npm` \| `pnpm` \| `yarn` |
-| `--install` / `--no-install` | Install dependencies after scaffolding |
-| `--git` / `--no-git` | Initialize a git repository |
-| `-y, --yes` | Accept defaults and skip optional prompts |
-| `-l, --list` | List available templates |
-| `-V, --version` | Print the version |
-| `-h, --help` | Show help |
+| Option                       | Description                                         |
+| ---------------------------- | --------------------------------------------------- |
+| `-t, --template <id>`        | Use a specific template (see `--list`)              |
+| `--pm <pm>`                  | Package manager: `bun` \| `npm` \| `pnpm` \| `yarn` |
+| `--install` / `--no-install` | Install dependencies after scaffolding              |
+| `--git` / `--no-git`         | Initialize a git repository                         |
+| `-y, --yes`                  | Accept defaults and skip optional prompts           |
+| `-l, --list`                 | List available templates                            |
+| `-V, --version`              | Print the version                                   |
+| `-h, --help`                 | Show help                                           |
 
 Anything you pass as a flag skips the matching prompt; anything you omit is asked interactively (with `bun` and "yes" as sensible defaults).
 

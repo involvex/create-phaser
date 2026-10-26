@@ -60,15 +60,15 @@ tests/          bun test suite; tests/templates/<id>.test.ts per template
 6. **Add the contract test** `tests/templates/<id>.test.ts`:
 
    ```ts
-   import { getTemplate } from "../../src/registry";
-   import { registerTemplateTests } from "../helpers";
+   import {getTemplate} from '../../src/registry'
+   import {registerTemplateTests} from '../helpers'
 
-   const info = getTemplate("<id>");
+   const info = getTemplate('<id>')
    if (!info) {
-     throw new Error("template <id> is not registered in src/registry.ts");
+   	throw new Error('template <id> is not registered in src/registry.ts')
    }
 
-   registerTemplateTests(info, ["src/scenes/GameScene.ts"]);
+   registerTemplateTests(info, ['src/scenes/GameScene.ts'])
    ```
 
 7. **Verify locally**:

@@ -1,51 +1,55 @@
 {
-  "name": "@involvex/create-phaser",
-  "version": "0.1.0",
-  "description": "Scaffold a TypeScript Phaser game project. Interactive game-style picker with built-in templates.",
-  "type": "module",
-  "license": "MIT",
-  "author": "involvex",
-  "homepage": "https://github.com/involvex/create-phaser#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/involvex/create-phaser.git"
-  },
-  "bugs": {
-    "url": "https://github.com/involvex/create-phaser/issues"
-  },
-  "keywords": [
-    "phaser",
-    "phaser4",
-    "typescript",
-    "vite",
-    "game",
-    "create",
-    "scaffold",
-    "template",
-    "cli"
-  ],
-  "bin": {
-    "create-phaser": "dist/cli.mjs"
-  },
-  "files": [
-    "dist",
-    "templates"
-  ],
-  "engines": {
-    "node": ">=20"
-  },
-  "scripts": {
-    "build": "bun run scripts/build.ts",
-    "test": "bun test",
-    "typecheck": "bun check",
-    "prepublishOnly": "bun run build && bun test"
-  },
-  "dependencies": {
-    "@clack/prompts": "^1.8.1",
-    "picocolors": "^1.1.1"
-  },
-  "devDependencies": {
-    "@types/bun": "^1.4.4",
-    "@types/node": "^26.6.5"
-  }
+	"name": "@involvex/create-phaser",
+	"version": "0.1.0",
+	"description": "Scaffold a TypeScript Phaser game project. Interactive game-style picker with built-in templates.",
+	"keywords": [
+		"phaser",
+		"phaser4",
+		"typescript",
+		"vite",
+		"game",
+		"create",
+		"scaffold",
+		"template",
+		"cli"
+	],
+	"homepage": "https://github.com/involvex/create-phaser#readme",
+	"bugs": {
+		"url": "https://github.com/involvex/create-phaser/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/involvex/create-phaser.git"
+	},
+	"license": "MIT",
+	"author": "involvex",
+	"type": "module",
+	"bin": {
+		"create-phaser": "dist/cli.mjs"
+	},
+	"files": [
+		"dist",
+		"templates"
+	],
+	"scripts": {
+		"build": "bun run scripts/build.ts",
+		"format": "prettier . --write",
+		"prepublishOnly": "bun run build && bun test",
+		"test": "bun test",
+		"typecheck": "bun check"
+	},
+	"prettier": "@involvex/prettier-config",
+	"dependencies": {
+		"@clack/prompts": "^1.8.1",
+		"picocolors": "^1.1.1"
+	},
+	"devDependencies": {
+		"@involvex/prettier-config": "^0.0.6",
+		"@types/bun": "^1.4.4",
+		"@types/node": "^26.6.5",
+		"prettier": "^3.9.10"
+	},
+	"engines": {
+		"node": ">=20"
+	}
 }

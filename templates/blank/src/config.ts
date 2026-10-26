@@ -7,10 +7,10 @@
 
 /** The game window as Phaser receives it (used by `new Phaser.Game`). */
 export const GAME = {
-  width: 960,
-  height: 540,
-  backgroundColor: "#15161c",
-};
+	width: 960,
+	height: 540,
+	backgroundColor: '#15161c',
+}
 
 /**
  * The template palette.
@@ -20,9 +20,9 @@ export const GAME = {
  * - `"#..."` strings feed Phaser display object styles such as Text color
  */
 export const COLORS = {
-  square: 0xffffff,
-  squareAlt: 0x4d9fff,
-  headline: "#ffd166",
-  text: "#f2f4ff",
-  muted: "#98a0b8",
-};
+	square: 0xffffff,
+	squareAlt: 0x4d9fff,
+	headline: '#ffd166',
+	text: '#f2f4ff',
+	muted: '#98a0b8',
+}
